@@ -25,22 +25,3 @@ h1 {
         margin-right: 7%;
     }
 }
-
-.faq-container {
-    display: none;
-    margin-top: 20px;
-}
-.question {
-    cursor: pointer;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #ff1616;
-    border-radius: 3px;
-}
-.answer {
-    display: none;
-    margin: 5px 0 10px 0;
-    padding: 10px;
-    background-color: #000000;
-    border-radius: 5px;
-}
