@@ -19,8 +19,17 @@ h1 {
     color: #ffffff;
 }
 
+pre {
+    font-size: 12px;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
 }
@@ -34,5 +43,11 @@ img {
         max-width: 100%;
         height: auto;
         display: block;
-  }
+    }
+    pre {
+        font-size: 12px;
+        margin-left: -40%; /* shift it slightly left */
+        width: calc(100% + 20px); /* prevent right-side clipping */
+        max-width: none; /* override any max-width that might be causing issues */
+    }
 }
