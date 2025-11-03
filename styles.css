@@ -96,3 +96,13 @@ img {
         max-width: none;
     }
 }
+
+details > summary {
+    cursor: pointer;
+  }
+  
+  /* highlight the summary on hover whether closed or open */
+  details > summary:hover {
+    background-color: #151515;
+    transition: background-color 0.2s ease;
+  }
