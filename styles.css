@@ -106,3 +106,17 @@ details > summary {
     background-color: #151515;
     transition: background-color 0.2s ease;
   }
+
+  html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
