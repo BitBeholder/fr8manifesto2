@@ -62,7 +62,7 @@ code {
 }
 
 img {
-    max-width: 450px;
+    max-width: 550px;
     height: auto;
     display: block;
     outline: none;
@@ -119,4 +119,42 @@ body {
 
 .content {
     flex: 1;
+}
+
+.faq-container details {
+    border-top: 1px solid #333;
+    padding: 14px 0;
+}
+
+.faq-container details:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.faq-container summary {
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    list-style: none;
+}
+
+.faq-container summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-container summary::before {
+    content: "+ ";
+    color: #aaa;
+}
+
+.faq-container details[open] summary::before {
+    content: "- ";
+}
+
+.faq-container summary:hover {
+    background-color: #151515;
+}
+
+.faq-container p {
+    margin-top: 12px;
+    color: #d0d0d0;
 }
